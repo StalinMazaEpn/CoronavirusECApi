@@ -1,0 +1,175 @@
+{
+    "estadisticas": {
+        "confirmados": 1835,
+        "muestras_tomadas": 6615
+    },
+    "provincias": [{
+            "id": 1,
+            "nombre": "Galápagos",
+            "confirmados": 4,
+            "latitude": -0.59325112,
+            "longitude": -90.72509766
+        },
+        {
+            "id": 2,
+            "nombre": "Guayas",
+            "confirmados": 1345,
+            "latitude": -2.22966164,
+            "longitude": -79.91455078
+        },
+        {
+            "id": 3,
+            "nombre": "Santo Domingo de los Tsáchilas",
+            "confirmados": 15,
+            "latitude": -0.29662953,
+            "longitude": -79.07958984
+        },
+        {
+            "id": 4,
+            "nombre": "Esmeraldas",
+            "confirmados": 4,
+            "latitude": 0.77451254,
+            "longitude": -79.41467285
+        },
+        {
+            "id": 5,
+            "nombre": "Manabí",
+            "confirmados": 44,
+            "latitude": -0.80746839,
+            "longitude": -80.05737305
+        },
+        {
+            "id": 6,
+            "nombre": "Santa Elena",
+            "confirmados": 10,
+            "latitude": -2.09791973,
+            "longitude": -80.57922363
+        },
+        {
+            "id": 7,
+            "nombre": "Los Ríos",
+            "confirmados": 60,
+            "latitude": -1.3402098,
+            "longitude": -79.5300293
+        },
+        {
+            "id": 8,
+            "nombre": "El Oro",
+            "confirmados": 23,
+            "latitude": -3.48600645,
+            "longitude": -79.83215332
+        },
+        {
+            "id": 9,
+            "nombre": "Bolívar",
+            "confirmados": 13,
+            "latitude": -1.59281238,
+            "longitude": -78.99169922
+        },
+        {
+            "id": 10,
+            "nombre": "Chimborazo",
+            "confirmados": 15,
+            "latitude": -1.68615793,
+            "longitude": -78.70605469
+        },
+        {
+            "id": 11,
+            "nombre": "Imbabura",
+            "confirmados": 9,
+            "latitude": 0.34606723,
+            "longitude": -78.11828613
+        },
+        {
+            "id": 12,
+            "nombre": "Tungurahua",
+            "confirmados": 4,
+            "latitude": -1.24547685,
+            "longitude": -78.62503052
+        },
+        {
+            "id": 13,
+            "nombre": "Cotopaxi",
+            "confirmados": 5,
+            "latitude": -0.93791587,
+            "longitude": -78.64013672
+        },
+        {
+            "id": 14,
+            "nombre": "Pichincha",
+            "confirmados": 171,
+            "latitude": -0.22418919,
+            "longitude": -78.50795746
+        },
+        {
+            "id": 15,
+            "nombre": "Carchi",
+            "confirmados": 5,
+            "latitude": 0.79922945,
+            "longitude": -77.72277832
+        },
+        {
+            "id": 16,
+            "nombre": "Cañar",
+            "confirmados": 19,
+            "latitude": -2.74553072,
+            "longitude": -78.88183594
+        },
+        {
+            "id": 17,
+            "nombre": "Azuay",
+            "confirmados": 42,
+            "latitude": -2.90463882,
+            "longitude": -79.00817871
+        },
+        {
+            "id": 18,
+            "nombre": "Loja",
+            "confirmados": 13,
+            "latitude": -4.02317911,
+            "longitude": -79.21691895
+        },
+        {
+            "id": 19,
+            "nombre": "Sucumbios",
+            "confirmados": 18,
+            "latitude": -0.00549316,
+            "longitude": -76.70654297
+        },
+        {
+            "id": 20,
+            "nombre": "Orellana",
+            "confirmados": 1,
+            "latitude": -0.81845361,
+            "longitude": -76.25610352
+        },
+        {
+            "id": 21,
+            "nombre": "Morona Santiago",
+            "confirmados": 8,
+            "latitude": -2.30101696,
+            "longitude": -78.1237793
+        },
+        {
+            "id": 22,
+            "nombre": "Pastaza",
+            "confirmados": 5,
+            "latitude": -1.49397131,
+            "longitude": -78.01391602
+        },
+        {
+            "id": 23,
+            "nombre": "Zamora Chinchipe",
+            "confirmados": 1,
+            "latitude": -4.09989026,
+            "longitude": -78.95874023
+        },
+        {
+            "id": 24,
+            "nombre": "Napo",
+            "confirmados": 0,
+            "latitude": -1.00730794,
+            "longitude": -77.8326416
+        }
+    ]
+}
