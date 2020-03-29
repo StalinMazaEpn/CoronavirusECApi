@@ -4,6 +4,7 @@ body {
 .map {
   width: 100vw;
   height: 100vh;
+  position: relative;
 }
 
 .info {
@@ -18,7 +19,11 @@ body {
   border-radius: 5px;
   padding: 12px 10px;
   text-align: center;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
+  position: fixed;
+  bottom: 50px;
+  left: -100px;
+  min-width: 180px;
 }
 .info h4 {
   margin: 0 0 5px;

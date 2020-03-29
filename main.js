@@ -105,11 +105,12 @@ async function getData() {
     return data
 }
 //Función renderizar datos
-function renderExtraData({ nombre, confirmados }) {
+function renderExtraData({ nombre, confirmados, fallecidos }) {
     return (`
         <div>
           <p> <strong>${nombre}</strong> </p>
           <p> Confirmados: ${confirmados} </p>
+          <p> Fallecidos: ${fallecidos} </p>
         </div>
       `)
 }
