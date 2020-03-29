@@ -9,6 +9,8 @@ Ejercicio realizado para mostrar un mapa actualizado de las personas afectadas p
 
 Puedes verlo [aquí](https://coronavirus-ec-sm-2019.netlify.com/) o seguir la guía sobre **Como Utilizarlo**
 
+Puedes verlo algunas estadísticas [aquí](https://coronavirus-ec-sm-2019.netlify.com/estadisticas)
+
 ## ¿Como Utilizarlo?
 
 Puedes bajarte el proyecto y ejecutarlo en un servidor web, si tienes NodeJS puedes instalar el paquete **live-server** y ejecutar el comando
