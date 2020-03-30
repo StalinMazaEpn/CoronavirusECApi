@@ -15,12 +15,12 @@
         {
             "sexo": "masculino",
             "casos": 1043,
-            "porcentaje": "54%"
+            "porcentaje": "54"
         },
         {
             "sexo": "femenino",
             "casos": 881,
-            "porcentaje": "46%"
+            "porcentaje": "46"
         }
     ],
     "rango_edades": [
