@@ -1,11 +1,13 @@
-let lightLayer = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+// let lightLayer = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+let lightLayer = 'https://mt1.google.com/vt/lyrs=r&x={x}&y={y}&z={z}';
 const  darkIcon = '🌛';
 const  lightIcon = '☀️';
 const  filterDark = ['invert:100%'];
 const  filterLight = [];
 let currentFilter = [];
 let btnIcon = lightIcon;
-const leafletAtribution = '&copy; <a href="https://www.openstreetmap.org/copyright">Gracias a OpenStreetMap</a>';
+const leafletAtributionGoogle = '&copy; <a target=_blank" href="https://www.google.com/intl/es-419_ec/help/terms_maps/">Google Maps</a>';
+const leafletAtributionOpenStreetMap = '&copy; <a href="https://www.openstreetmap.org/copyright">Gracias a OpenStreetMap</a>';
 const initialCoords = [-1.702630, -78.695068];
 
 //Funciones Manejar Temas
@@ -55,7 +57,7 @@ var map = L.map('map', {
 }).setView(initialCoords, 7);
 //Añadirle una capa
 let mapTileLayer = L.tileLayer.colorFilter(lightLayer, {
-    attribution: leafletAtribution,
+    attribution: leafletAtributionGoogle,
     updateWhenIdle: true,
     reuseTiles: true,
     filter: currentFilter,
