@@ -1,25 +1,25 @@
 {
     "estadisticas": {
-        "estables_aislamiento_domiciliario": 1562,
+        "estables_aislamiento_domiciliario": 1598,
         "hospitalizados_estables": 191,
         "hospitalizados_pronostico_reservadp": 110,
-        "confirmados": 1924,
-        "fallecidos": 58,
-        "sospechosos": 2869,
-        "descartados": 2199,
+        "confirmados": 1962,
+        "fallecidos": 60,
+        "sospechosos": 3083,
+        "descartados": 2223,
         "recuperados": 3,
-        "muestras_tomadas": 6992,
-        "fecha_corte": "29/03/2020 17:00"
+        "muestras_tomadas": 7268,
+        "fecha_corte": "30/03/2020 10:00"
     },
     "generos": [
         {
             "sexo": "masculino",
-            "casos": 1043,
+            "casos": 1062,
             "porcentaje": "54"
         },
         {
             "sexo": "femenino",
-            "casos": 881,
+            "casos": 900,
             "porcentaje": "46"
         }
     ],
@@ -30,7 +30,7 @@
         },
         {
             "tipo": "1-4 años",
-            "casos": 8
+            "casos": 9
         },
         {
             "tipo": "5-9 años",
@@ -38,23 +38,23 @@
         },
         {
             "tipo": "10-14 años",
-            "casos": 19
+            "casos": 20
         },
         {
             "tipo": "15-19 años",
-            "casos": 30
+            "casos": 32
         },
         {
             "tipo": "20-49 años",
-            "casos": 1184
+            "casos": 1203
         },
         {
             "tipo": "50-64 años",
-            "casos": 466
+            "casos": 477
         },
         {
             "tipo": "mayores de 65 años",
-            "casos": 195
+            "casos": 199
         }
     ],
     "provincias": [
@@ -69,8 +69,8 @@
         {
             "id": 2,
             "nombre": "Guayas",
-            "confirmados": 1377,
-            "fallecidos": 37,
+            "confirmados": 1396,
+            "fallecidos": 38,
             "latitude": -2.22966164,
             "longitude": -79.91455078
         },
@@ -117,7 +117,7 @@
         {
             "id": 8,
             "nombre": "El Oro",
-            "confirmados": 25,
+            "confirmados": 30,
             "fallecidos": 4,
             "latitude": -3.48600645,
             "longitude": -79.83215332
@@ -166,7 +166,7 @@
             "id": 14,
             "nombre": "Pichincha",
             "confirmados": 188,
-            "fallecidos": 4,
+            "fallecidos": 5,
             "latitude": -0.22418919,
             "longitude": -78.50795746
         },
@@ -181,7 +181,7 @@
         {
             "id": 16,
             "nombre": "Cañar",
-            "confirmados": 26,
+            "confirmados": 28,
             "fallecidos": 1,
             "latitude": -2.74553072,
             "longitude": -78.88183594
@@ -189,7 +189,7 @@
         {
             "id": 17,
             "nombre": "Azuay",
-            "confirmados": 53,
+            "confirmados": 57,
             "fallecidos": 1,
             "latitude": -2.90463882,
             "longitude": -79.00817871
@@ -197,7 +197,7 @@
         {
             "id": 18,
             "nombre": "Loja",
-            "confirmados": 15,
+            "confirmados": 21,
             "fallecidos": 0,
             "latitude": -4.02317911,
             "longitude": -79.21691895
@@ -221,7 +221,7 @@
         {
             "id": 21,
             "nombre": "Morona Santiago",
-            "confirmados": 9,
+            "confirmados": 10,
             "fallecidos": 0,
             "latitude": -2.30101696,
             "longitude": -78.1237793
@@ -237,7 +237,7 @@
         {
             "id": 23,
             "nombre": "Zamora Chinchipe",
-            "confirmados": 1,
+            "confirmados": 2,
             "latitude": -4.09989026,
             "fallecidos": 0,
             "longitude": -78.95874023
