@@ -5,21 +5,21 @@
   --dark: #22303a;
   --ligth: #d0dae2;
   --font-sections-size: 1.4em;
-   --font-content: 'Open Sans', sans-serif;
-   --font-title: 'Raleway', sans-serif;
+  --font-content: "Open Sans", sans-serif;
+  --font-title: "Raleway", sans-serif;
 }
 
 /* Mapa */
 
-.d-none{
+.d-none {
   display: none !important;
 }
 
-html, body{
+html,
+body {
   margin: 0;
 }
 body {
-  /* margin: 0; */
   background: var(--dark);
   color: white;
   display: flex;
@@ -28,7 +28,7 @@ body {
   font-family: var(--font-content);
 }
 
-.contenido-cargado{
+.contenido-cargado {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -38,8 +38,8 @@ body {
   text-align: center;
 }
 
-.seccion-container{
-  position:relative;
+.seccion-container {
+  position: relative;
   width: 95%;
 }
 
@@ -159,18 +159,18 @@ body {
   font-size: 1.2em;
   font-family: var(--font-title);
 }
-.seccion-estadisticas-generales .title-section{
+.seccion-estadisticas-generales .title-section {
   position: relative;
 }
 /* .seccion-estadisticas-generales .title-section:before{
-  content: '';
-  position: absolute;
-  bottom: -15px;
-  left: 32%;
-  width: 8em;
-  height: 5px;
-  background: white;
-} */
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 32%;
+    width: 8em;
+    height: 5px;
+    background: white;
+  } */
 .seccion-estadisticas-generales article .content {
   font-size: 1.1em;
   word-wrap: anywhere;
@@ -180,7 +180,7 @@ body {
 .seccion-estadisticas-generales .confirmed {
   color: var(--ligth-blue);
 }
-.seccion-estadisticas-generales .general{
+.seccion-estadisticas-generales .general {
   color: var(--ligth);
 }
 
@@ -192,7 +192,7 @@ body {
   align-items: center;
 }
 
-.seccion-graficos-estadisticos .title{
+.seccion-graficos-estadisticos .title {
   font-size: var(--font-sections-size);
 }
 
@@ -223,7 +223,7 @@ body {
 
 .seccion-origen-datos .title {
   font-size: var(--font-sections-size);
-  font-family: var(--font-title);  
+  font-family: var(--font-title);
 }
 
 .seccion-origen-datos .item {
@@ -268,11 +268,10 @@ body {
   }
 }
 
-.loading-container{
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: green;
+.loading-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
