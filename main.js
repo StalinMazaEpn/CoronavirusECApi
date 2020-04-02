@@ -10,6 +10,7 @@ let icons = {
     question: 'fa fa-question-circle',
     termometer: 'fa fa-thermometer-full',
     times: 'fa fa-times',
+    bullseye: 'fa fa-bullseye',
     default: ''
 };
 
@@ -53,6 +54,9 @@ function getEstadisticasIcon(property){
             break;
         case 'muestras_tomadas':
             icon = icons.users;
+            break;
+        case 'fallecidos_probables':
+            icon = icons.bullseye;
             break;
         case 'fecha_corte':
             icon = icons.users;
