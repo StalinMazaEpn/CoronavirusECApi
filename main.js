@@ -66,9 +66,8 @@ function getEstadisticasIcon(property){
 }
 
 
-const capitalize = (s) => {
-    if (typeof s !== 'string') return ''
-    return s.charAt(0).toUpperCase() + s.slice(1)
+const capitalize = (value) => {
+    return value.replace(/(?:^|\s)\S/g, function(word) { return word.toUpperCase(); });
 }
 
 async function main(){
@@ -96,7 +95,8 @@ function buildStadistics(data){
     const estadisticasData = data.estadisticas;
     let articleFragmento = document.createDocumentFragment();
     for (const prop in estadisticasData) {
-        const title = prop.replace('_', ' ');
+        //const title = prop.replace('_', ' ');
+        const title = prop.split('_').join(' '); 
         const valor = estadisticasData[prop];
         const titleCapitalize = capitalize(title)
         if(prop == 'fecha_corte'){
