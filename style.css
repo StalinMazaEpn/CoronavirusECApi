@@ -1,20 +1,83 @@
-body {
+:root {
+  --turquesa: #0ba082;
+  --ligth-blue: #66d1ff;
+  --blue: #12619c;
+  --dark: #22303a;
+  --ligth: #d0dae2;
+  --font-sections-size: 1.4em;
+   --font-content: 'Open Sans', sans-serif;
+   --font-title: 'Raleway', sans-serif;
+}
+
+/* Mapa */
+
+.d-none{
+  display: none !important;
+}
+
+html, body{
   margin: 0;
 }
-.map {
-  width: 100vw;
-  height: 100vh;
+body {
+  /* margin: 0; */
+  background: var(--dark);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font-content);
+}
+
+.contenido-cargado{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header {
+  text-align: center;
+}
+
+.seccion-container{
+  position:relative;
+  width: 95%;
+}
+
+.footer {
+  margin-top: 2em;
+  text-align: center;
+  font-size: 1em;
+  color: #d0dae2;
+}
+.footer .item {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.1em;
+}
+
+.seccion-mapa {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  height: 85vh;
+  flex-direction: column;
+  text-align: center;
+}
+.seccion-mapa .title {
+  font-size: var(--font-sections-size);
+  font-family: var(--font-title);
+}
+.seccion-mapa .map {
+  width: 100%;
+  height: 100%;
   position: relative;
 }
 
 .info {
   padding: 6px 8px;
   font: 14px/16px Arial, Helvetica, sans-serif;
-
-  /* background: white; */
   background: #22303a;
-  /* background: #d89e34fa; */
-  /* background: rgba(255,255,255,0.8); */
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   padding: 12px 10px;
@@ -58,5 +121,158 @@ body {
   transform: translate(-50%, 0%);
   margin: 1em;
 }
-/* createCorner("top", "center"), in leaflet.src */
-/* createCorner("bottom", "center") */
+
+.seccion-estadisticas-generales .title {
+  text-align: center;
+  font-size: var(--font-sections-size);
+  font-family: var(--font-title);
+}
+
+/* Estadisticas */
+.seccion-estadisticas-generales .content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.seccion-estadisticas-generales article {
+  flex-basis: 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  min-width: 150px;
+  margin-bottom: 0.7em;
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+.seccion-estadisticas-generales article span {
+  margin-bottom: 10px;
+}
+
+.seccion-estadisticas-generales article .icon {
+  font-size: 2.2em;
+}
+.seccion-estadisticas-generales article .title {
+  font-size: 1.2em;
+  font-family: var(--font-title);
+}
+.seccion-estadisticas-generales .title-section{
+  position: relative;
+}
+/* .seccion-estadisticas-generales .title-section:before{
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 32%;
+  width: 8em;
+  height: 5px;
+  background: white;
+} */
+.seccion-estadisticas-generales article .content {
+  font-size: 1.1em;
+  word-wrap: anywhere;
+  position: relative;
+}
+
+.seccion-estadisticas-generales .confirmed {
+  color: var(--ligth-blue);
+}
+.seccion-estadisticas-generales .general{
+  color: var(--ligth);
+}
+
+/* Graficos */
+.seccion-graficos-estadisticos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seccion-graficos-estadisticos .title{
+  font-size: var(--font-sections-size);
+}
+
+.seccion-graficos-estadisticos .content .subtitle {
+  text-align: center;
+  font-size: var(--font-sections-size);
+  font-family: var(--font-title);
+  color: var(--ligth-blue);
+  /* color: white; */
+}
+
+.chart-container {
+  position: relative;
+  width: 100%;
+  /* width: 100vw; */
+  height: 400px;
+  margin-bottom: 2.5em;
+}
+
+.seccion-origen-datos {
+  margin-top: 1em;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seccion-origen-datos .title {
+  font-size: var(--font-sections-size);
+  font-family: var(--font-title);  
+}
+
+.seccion-origen-datos .item {
+  display: block;
+  font-size: 1.1em;
+  margin-bottom: 1.1em;
+  color: var(--ligth);
+  width: 90%;
+}
+
+.seccion-origen-datos .item a {
+  text-decoration: none;
+}
+.seccion-origen-datos .item a,
+.seccion-origen-datos .item a:visited {
+  color: var(--ligth-blue);
+}
+
+/* Animaciones */
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: green;
+}

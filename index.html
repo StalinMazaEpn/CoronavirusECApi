@@ -10,19 +10,81 @@
     <link rel="stylesheet" href="./assets/leaflet-core/leaflet.css" />
     <script src="./assets/leaflet-core/leaflet-src.js"></script>
     <link rel="shortcut icon" href="favicon.png" type="image/png">
-        <!-- FullScreen Mejorado -->
-        <link rel="stylesheet" href="./assets/leaflet-fullscreen/Control.FullScreen.css" />
-        <script src="./assets/leaflet-fullscreen/Control.FullScreen.js"></script>
+    <!-- FullScreen Mejorado -->
+    <link rel="stylesheet" href="./assets/leaflet-fullscreen/Control.FullScreen.css" />
+    <script src="./assets/leaflet-fullscreen/Control.FullScreen.js"></script>
     <!-- Own Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="./assets/leaflet.edgebuffer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
     <script src="./assets//leaflet-tilelayer-colorfilter.min.js"></script>
 
 </head>
 
 <body>
-    <div id="map" class="map"></div>
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAW6qfQaTnjuo6ti9_l28oS1pJwGNnY0Z4"></script> -->
+    <div class="loading-container">
+        <div class="lds-dual-ring"></div>
+    </div>
+    <div class="contenido-cargado d-none">
+
+        <div class="header">
+            <h1>Coronavirus en Ecuador</h1>
+        </div>
+        <div class="seccion-container">
+            <section class="seccion-mapa">
+                <h3 class="title">Mapa Contagiados País</h3>
+                <div id="map" class="map"></div>
+            </section>
+            <!-- seccion-estadisticas -->
+            <section class="seccion-estadisticas-generales">
+                <h3 class="title title-section">Estadísticas Generales</h3>
+                <div class="content">
+                </div>
+            </section>
+            <!-- seccion graficos estadisticos -->
+            <section class="seccion-graficos-estadisticos">
+                <h3 class="title">Gráficos Estadísticos</h3>
+                <div class="content">
+                    <p class="subtitle">Nº Contagiados por Provincia</p>
+                    <div class="chart-container">
+                        <canvas id="chartConfirmados"></canvas>
+                    </div>
+                    <p class="subtitle">Nº Fallecidos por Provincia</p>
+                    <div class="chart-container">
+                        <canvas id="chartFallecidos"></canvas>
+                    </div>
+                    <p class="subtitle">Nº Contagiados según el Sexo</p>
+                    <div class="chart-container">
+                        <canvas id="chartGeneros"></canvas>
+                    </div>
+                    <p class="subtitle">Nº Contagiados por rango edades</p>
+                    <div class="chart-container">
+                        <canvas id="chartRangoEdades"></canvas>
+                    </div>
+                </div>
+            </section>
+            <div class="seccion-origen-datos">
+                <h3 class="title">Nota</h3>
+                <span class="item">Los datos presentados son obtenidos por el Ministerio de Salud Pública de Ecuador
+                    desde
+                    su
+                    página oficial
+                    <a href="https://www.salud.gob.ec/actualizacion-de-casos-de-coronavirus-en-ecuador/" target="_blank"
+                        rel="nofollow">MSP.</a>
+                </span>
+                <span class="item">Los Datos son actualizados diariamente de forma manual luego de los reportes dados a
+                    las
+                    10:00 y 17:00 respectivamente.</span>
+            </div>
+        </div>
+        <div class="footer">
+            <span class="item">Diseñado por Stalin Maza © 2020</span>
+        </div>
+    </div>
     <script type="module" src="main.js"></script>
 
 </body>
