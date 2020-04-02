@@ -1,25 +1,26 @@
 {
     "estadisticas": {
-        "estables_aislamiento_domiciliario": 2289,
-        "hospitalizados_estables": 208,
-        "hospitalizados_pronostico_reservado": 100,
-        "confirmados": 2748,
-        "fallecidos": 93,
-        "sospechosos": 3200,
-        "descartados": 2799,
+        "estables_aislamiento_domiciliario": 2301,
+        "hospitalizados_estables": 191,
+        "hospitalizados_pronostico_reservado": 110,
+        "confirmados": 2758,
+        "sospechosos": 3428,
+        "fallecidos": 98,
+        "descartados": 2833,
         "recuperados": 58,
-        "muestras_tomadas": 8747,
+        "muestras_tomadas": 9019,
+        "fallecidos_probables": 76,
         "fecha_corte": "31/03/2020 17:00"
     },
     "generos": [
         {
             "sexo": "masculino",
-            "casos": 1493,
+            "casos": 1502,
             "porcentaje": "54"
         },
         {
             "sexo": "femenino",
-            "casos": 1255,
+            "casos": 1256,
             "porcentaje": "46"
         }
     ],
@@ -46,15 +47,15 @@
         },
         {
             "tipo": "20-49 años",
-            "casos": 1678
+            "casos": 1682
         },
         {
             "tipo": "50-64 años",
-            "casos": 672
+            "casos": 676
         },
         {
             "tipo": "mayores de 65 años",
-            "casos": 298
+            "casos": 300
         }
     ],
     "provincias": [
@@ -69,8 +70,8 @@
         {
             "id": 2,
             "nombre": "Guayas",
-            "confirmados": 1937,
-            "fallecidos": 60,
+            "confirmados": 1941,
+            "fallecidos": 63,
             "latitude": -2.22966164,
             "longitude": -79.91455078
         },
@@ -118,7 +119,7 @@
             "id": 8,
             "nombre": "El Oro",
             "confirmados": 52,
-            "fallecidos": 7,
+            "fallecidos": 9,
             "latitude": -3.48600645,
             "longitude": -79.83215332
         },
@@ -133,7 +134,7 @@
         {
             "id": 10,
             "nombre": "Chimborazo",
-            "confirmados": 17,
+            "confirmados": 18,
             "fallecidos": 0,
             "latitude": -1.68615793,
             "longitude": -78.70605469
@@ -157,7 +158,7 @@
         {
             "id": 13,
             "nombre": "Cotopaxi",
-            "confirmados": 9,
+            "confirmados": 10,
             "fallecidos": 1,
             "latitude": -0.93791587,
             "longitude": -78.64013672
@@ -165,7 +166,7 @@
         {
             "id": 14,
             "nombre": "Pichincha",
-            "confirmados": 245,
+            "confirmados": 248,
             "fallecidos": 5,
             "latitude": -0.22418919,
             "longitude": -78.50795746
@@ -197,7 +198,7 @@
         {
             "id": 18,
             "nombre": "Loja",
-            "confirmados": 26,
+            "confirmados": 27,
             "fallecidos": 0,
             "latitude": -4.02317911,
             "longitude": -79.21691895
