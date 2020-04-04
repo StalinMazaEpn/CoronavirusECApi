@@ -134,7 +134,7 @@ function buildMapa(data) {
     let btnIcon = lightIcon;
     const leafletAtributionGoogle = '&copy; <a target=_blank" href="https://www.google.com/intl/es-419_ec/help/terms_maps/">Google Maps</a>';
     const leafletAtributionOpenStreetMap = '&copy; <a href="https://www.openstreetmap.org/copyright">Gracias a OpenStreetMap</a>';
-    const initialCoords = [-1.702630, -78.695068];
+    const initialCoords = [-1.618322, -80.779271];
 
     //Funciones Manejar Temas
     const getThemeMode = () => {
@@ -179,7 +179,7 @@ function buildMapa(data) {
         zoomAnimation: false,
         markerZoomAnimation: false,
         zoomControl: true,
-    }).setView(initialCoords, 6);
+    }).setView(initialCoords, 7, { animation: true });
     //Añadirle una capa
     let mapTileLayer = L.tileLayer.colorFilter(lightLayer, {
         attribution: leafletAtributionGoogle,
@@ -222,10 +222,14 @@ function buildMapa(data) {
     //Función renderizar datos
     function renderExtraData({ nombre, confirmados, fallecidos }) {
         return (`
-            <div>
-              <p> <strong>${nombre}</strong> </p>
-              <p> Confirmados: ${confirmados} </p>
-              <p> Fallecidos: ${fallecidos} </p>
+            <div class="map-info-popup">
+              <p class="provincia"> <strong>${nombre}</strong> </p>
+              <p class="confirmados"> 
+                <span><i class="${icons.check} icon-confirmados" aria-hidden="true"></i> Confirmados </span><span>${confirmados}</span>
+              </p>
+              <p class="fallecidos"> 
+                <span><i class="${icons.frown} icon-fallecidos" aria-hidden="true"></i> Fallecidos </span><span>${fallecidos}</span> 
+              </p>
             </div>
           `)
     }
@@ -315,7 +319,7 @@ function buildCharts(data){
         let colors = [];
         data.forEach(province =>{
             if(province.confirmados > 0){
-                customLabels.push(province.nombre);
+                customLabels.push(`${province.nombre}-${province.confirmados}`);
                 customData.push(province.confirmados);
                 colors.push(getRandomColor())
             }
@@ -339,7 +343,7 @@ function buildCharts(data){
         let colors = [];
         data.forEach(province =>{
             if(province.fallecidos > 0){
-                customLabels.push(province.nombre);
+                customLabels.push(`${province.nombre}-${province.fallecidos}`);
                 customData.push(province.fallecidos);
                 colors.push(getRandomColor())
             }
@@ -364,7 +368,7 @@ function buildCharts(data){
         let customData = [];
         let colors = [];
         data.forEach(genero =>{
-                customLabels.push(capitalize(genero.sexo));
+                customLabels.push(capitalize(`${genero.sexo}-${genero.casos}`));
                 customData.push(genero.casos);
                 colors.push(getRandomColor())
             
@@ -387,7 +391,7 @@ function buildCharts(data){
         let customData = [];
         let colors = [];
         data.forEach(rango_edades =>{
-                customLabels.push(capitalize(rango_edades.tipo));
+                customLabels.push(`${capitalize(rango_edades.tipo)}-${rango_edades.casos}`);
                 customData.push(rango_edades.casos);
                 colors.push(getRandomColor())
             

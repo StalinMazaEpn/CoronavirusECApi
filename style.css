@@ -3,8 +3,10 @@
   --ligth-blue: #66d1ff;
   --blue: #12619c;
   --dark: #22303a;
+  --red: #fa0000;
+  --green: #5fb709;
   --ligth: #d0dae2;
-  --font-sections-size: 1.4em;
+  --font-sections-size: 1.3em;
   --font-content: "Open Sans", sans-serif;
   --font-title: "Raleway", sans-serif;
 }
@@ -34,13 +36,14 @@ body {
   flex-direction: column;
 }
 
-.header {
+.header{
   text-align: center;
+  font-size: 1.1em;
 }
 
 .seccion-container {
   position: relative;
-  width: 95%;
+  width: 90vw;
 }
 
 .footer {
@@ -60,9 +63,10 @@ body {
   justify-content: center;
   width: 100%;
   align-items: center;
-  height: 85vh;
+  height: 75vh;
   flex-direction: column;
   text-align: center;
+  min-height: 200px;
 }
 .seccion-mapa .title {
   font-size: var(--font-sections-size);
@@ -275,3 +279,16 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.map-info-popup .confirmados{
+  color: var(--green);
+  font-size: 1.3em;
+}
+.map-info-popup .fallecidos{
+  color: var(--red);
+  font-size: 1.3em;
+}
+.map-info-popup .provincia{
+  font-size: 1.5em;
+}
+
