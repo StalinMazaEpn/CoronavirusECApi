@@ -1,61 +1,61 @@
 {
     "estadisticas": {
-        "estables_aislamiento_domiciliario": 2666,
-        "hospitalizados_estables": 388,
-        "hospitalizados_pronostico_reservado": 139,
-        "confirmados": 3465,
+        "estables_aislamiento_domiciliario": 3066,
+        "hospitalizados_estables": 284,
+        "hospitalizados_pronostico_reservado": 156,
+        "confirmados": 3747,
         "sospechosos": 4475,
-        "fallecidos": 172,
-        "descartados": 3369,
+        "fallecidos": 191,
+        "descartados": 3843,
         "recuperados": 100,
-        "muestras_tomadas": 11309,
-        "fallecidos_probables": 146,
-        "fecha_corte": "04/04/2020 10:00"
+        "muestras_tomadas": 13039,
+        "fallecidos_probables": 173,
+        "fecha_corte": "06/04/2020 10:00"
     },
     "generos": [
         {
             "sexo": "masculino",
-            "casos": 1911,
+            "casos": 2078,
             "porcentaje": "55"
         },
         {
             "sexo": "femenino",
-            "casos": 1554,
+            "casos": 1669,
             "porcentaje": "45"
         }
     ],
     "rango_edades": [
         {
             "tipo": "0-11 meses",
-            "casos": 5
+            "casos": 6
         },
         {
             "tipo": "1-4 años",
-            "casos": 13
+            "casos": 14
         },
         {
             "tipo": "5-9 años",
-            "casos": 26
+            "casos": 27
         },
         {
             "tipo": "10-14 años",
-            "casos": 26
+            "casos": 28
         },
         {
             "tipo": "15-19 años",
-            "casos": 45
+            "casos": 49
         },
         {
             "tipo": "20-49 años",
-            "casos": 2080
+            "casos": 2232
         },
         {
             "tipo": "50-64 años",
-            "casos": 865
+            "casos": 936
         },
         {
             "tipo": "mayores de 65 años",
-            "casos": 405
+            "casos": 455
         }
     ],
     "provincias": [
@@ -70,15 +70,15 @@
         {
             "id": 2,
             "nombre": "Guayas",
-            "confirmados": 2402,
-            "fallecidos": 122,
+            "confirmados": 2534,
+            "fallecidos": 130,
             "latitude": -2.22966164,
             "longitude": -79.91455078
         },
         {
             "id": 3,
             "nombre": "Santo Domingo de los Tsáchilas",
-            "confirmados": 31,
+            "confirmados": 36,
             "latitude": -0.29662953,
             "fallecidos": 2,
             "longitude": -79.07958984
@@ -86,7 +86,7 @@
         {
             "id": 4,
             "nombre": "Esmeraldas",
-            "confirmados": 14,
+            "confirmados": 17,
             "fallecidos": 0,
             "latitude": 0.77451254,
             "longitude": -79.41467285
@@ -94,7 +94,7 @@
         {
             "id": 5,
             "nombre": "Manabí",
-            "confirmados": 71,
+            "confirmados": 88,
             "fallecidos": 2,
             "latitude": -0.80746839,
             "longitude": -80.05737305
@@ -102,7 +102,7 @@
         {
             "id": 6,
             "nombre": "Santa Elena",
-            "confirmados": 48,
+            "confirmados": 52,
             "fallecidos": 4,
             "latitude": -2.09791973,
             "longitude": -80.57922363
@@ -110,7 +110,7 @@
         {
             "id": 7,
             "nombre": "Los Ríos",
-            "confirmados": 153,
+            "confirmados": 158,
             "fallecidos": 10,
             "latitude": -1.3402098,
             "longitude": -79.5300293
@@ -118,15 +118,15 @@
         {
             "id": 8,
             "nombre": "El Oro",
-            "confirmados": 56,
-            "fallecidos": 11,
+            "confirmados": 58,
+            "fallecidos": 14,
             "latitude": -3.48600645,
             "longitude": -79.83215332
         },
         {
             "id": 9,
             "nombre": "Bolívar",
-            "confirmados": 26,
+            "confirmados": 27,
             "fallecidos": 1,
             "latitude": -1.59281238,
             "longitude": -78.99169922
@@ -134,16 +134,16 @@
         {
             "id": 10,
             "nombre": "Chimborazo",
-            "confirmados": 31,
-            "fallecidos": 1,
+            "confirmados": 46,
+            "fallecidos": 2,
             "latitude": -1.68615793,
             "longitude": -78.70605469
         },
         {
             "id": 11,
             "nombre": "Imbabura",
-            "confirmados": 20,
-            "fallecidos": 1,
+            "confirmados": 21,
+            "fallecidos": 2,
             "latitude": 0.34606723,
             "longitude": -78.11828613
         },
@@ -151,14 +151,14 @@
             "id": 12,
             "nombre": "Tungurahua",
             "confirmados": 22,
-            "fallecidos": 2,
+            "fallecidos": 3,
             "latitude": -1.24547685,
             "longitude": -78.62503052
         },
         {
             "id": 13,
             "nombre": "Cotopaxi",
-            "confirmados": 16,
+            "confirmados": 23,
             "fallecidos": 1,
             "latitude": -0.93791587,
             "longitude": -78.64013672
@@ -166,15 +166,15 @@
         {
             "id": 14,
             "nombre": "Pichincha",
-            "confirmados": 321,
-            "fallecidos": 6,
+            "confirmados": 395,
+            "fallecidos": 10,
             "latitude": -0.22418919,
             "longitude": -78.50795746
         },
         {
             "id": 15,
             "nombre": "Carchi",
-            "confirmados": 9,
+            "confirmados": 12,
             "fallecidos": 0,
             "latitude": 0.643977,
             "longitude": -77.75750
@@ -182,7 +182,7 @@
         {
             "id": 16,
             "nombre": "Cañar",
-            "confirmados": 56,
+            "confirmados": 59,
             "fallecidos": 2,
             "latitude": -2.74553072,
             "longitude": -78.88183594
@@ -190,7 +190,7 @@
         {
             "id": 17,
             "nombre": "Azuay",
-            "confirmados": 99,
+            "confirmados": 100,
             "fallecidos": 5,
             "latitude": -2.90463882,
             "longitude": -79.00817871
@@ -206,7 +206,7 @@
         {
             "id": 19,
             "nombre": "Sucumbios",
-            "confirmados": 27,
+            "confirmados": 30,
             "fallecidos": 1,
             "latitude": -0.00549316,
             "longitude": -76.70654297
@@ -214,7 +214,7 @@
         {
             "id": 20,
             "nombre": "Orellana",
-            "confirmados": 2,
+            "confirmados": 4,
             "fallecidos": 0,
             "latitude": -0.81845361,
             "longitude": -76.25610352
@@ -222,7 +222,7 @@
         {
             "id": 21,
             "nombre": "Morona Santiago",
-            "confirmados": 10,
+            "confirmados": 11,
             "fallecidos": 0,
             "latitude": -2.30101696,
             "longitude": -78.1237793
@@ -230,7 +230,7 @@
         {
             "id": 22,
             "nombre": "Pastaza",
-            "confirmados": 9,
+            "confirmados": 12,
             "fallecidos": 0,
             "latitude": -1.49397131,
             "longitude": -78.01391602
