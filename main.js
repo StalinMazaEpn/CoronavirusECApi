@@ -103,8 +103,9 @@ function buildStadistics(data){
         const title = prop.split('_').join(' '); 
         const valor = estadisticasData[prop];
         const titleCapitalize = capitalize(title)
-        if(prop == 'fecha_corte'){
-            break;
+        if(prop == 'fecha_corte' || prop == 'sospechosos'){
+            //break;
+            continue;
         }
         const icon = getEstadisticasIcon(prop);
         let articulo = document.createElement("article");
