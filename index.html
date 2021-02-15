@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="description" content="Revisa los datos actuales sobre el impacto que ha tenido el coronavirus en Ecuador con datos desde el MSP Ecuador"/>
-    <meta name="keywords" content="coronavirus, coronavirus ecuador, ministerio salud publica ecuador"/>
-    <meta name="author" content="Stalin Maza"/>
-    <meta name="copyright" content="Stalin Maza"/>
+    <meta name="description"
+        content="Revisa los datos actuales sobre el impacto que ha tenido el coronavirus en Ecuador con datos desde el MSP Ecuador" />
+    <meta name="keywords" content="coronavirus, coronavirus ecuador, ministerio salud publica ecuador" />
+    <meta name="author" content="Stalin Maza" />
+    <meta name="copyright" content="Stalin Maza" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@stalinct97" />
     <meta name="twitter:creator" content="@stalinct97" />
     <meta property="og:url" content="https://coronavirus-ec-sm-2019.netlify.com" />
     <meta property="og:title" content="Coronavirus Ecuador Web - Api" />
-    <meta property="og:description" content="Revisa los datos actuales sobre el impacto que ha tenido el coronavirus en Ecuador con datos desde el MSP Ecuador" />
-    <meta property="og:image" content="https://raw.githubusercontent.com/StalinMazaEpn/CoronavirusECApi/master/CoronavirusEC.png" />
+    <meta property="og:description"
+        content="Revisa los datos actuales sobre el impacto que ha tenido el coronavirus en Ecuador con datos desde el MSP Ecuador" />
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/StalinMazaEpn/CoronavirusECApi/master/CoronavirusEC.png" />
     <title>COVID 19</title>
     <!-- Leaflet Core -->
     <link rel="stylesheet" href="./assets/leaflet-core/leaflet.css" />
@@ -26,12 +30,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/leaflet-gesture-handling.min.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/leaflet.zoomdisplay.css">
     <link rel="stylesheet" href="style.css">
+    <script src="./lib/leaflet-gesture-handling.min.js"></script>
     <script src="./assets/leaflet.edgebuffer.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
+    <script src="./lib/Chart.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script> -->
+    <script src="./lib/spin.min.js" charset="utf-8"></script>
+    <script src="./lib/leaflet.spin.min.js" charset="utf-8"></script>
+    <script src="./lib/lodash.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script> -->
     <script src="./assets//leaflet-tilelayer-colorfilter.min.js"></script>
-
+    <script src="./lib/axios.min.js"></script>
+    <script src="./lib/leaflet.zoomdisplay.js"></script>
 </head>
 
 <body>
@@ -51,29 +63,33 @@
             <!-- seccion-estadisticas -->
             <section class="seccion-estadisticas-generales">
                 <h3 class="title title-section">Estadísticas Generales</h3>
-                <div class="content">
+                <div class="content content-dynamic">
+                    <p class="center-no-data">No hay datos disponibles</p>
                 </div>
             </section>
             <!-- seccion graficos estadisticos -->
             <section class="seccion-graficos-estadisticos">
                 <h3 class="title">Gráficos Estadísticos</h3>
-                <div class="content">
-                    <p class="subtitle">Nº Contagiados por Provincia</p>
-                    <div class="chart-container">
-                        <canvas id="chartConfirmados"></canvas>
+                <div class="content content-dynamic">
+                    <p class="center-no-data chart-no-data">No hay datos disponibles</p>
+                    <div class="charts-data d-none">
+                        <p class="subtitle">Nº Contagiados por Provincia</p>
+                        <div class="chart-container">
+                            <canvas id="chartConfirmados"></canvas>
+                        </div>
+                        <p class="subtitle">Nº Fallecidos por Provincia</p>
+                        <div class="chart-container">
+                            <canvas id="chartFallecidos"></canvas>
+                        </div>
                     </div>
-                    <p class="subtitle">Nº Fallecidos por Provincia</p>
-                    <div class="chart-container">
-                        <canvas id="chartFallecidos"></canvas>
-                    </div>
-                    <p class="subtitle">Nº Contagiados según el Sexo</p>
+                    <!-- <p class="subtitle">Nº Contagiados según el Sexo</p>
                     <div class="chart-container">
                         <canvas id="chartGeneros"></canvas>
                     </div>
                     <p class="subtitle">Nº Contagiados por rango edades</p>
                     <div class="chart-container">
                         <canvas id="chartRangoEdades"></canvas>
-                    </div>
+                    </div> -->
                 </div>
             </section>
             <div class="seccion-origen-datos">
@@ -85,14 +101,16 @@
                     <a href="https://www.salud.gob.ec/actualizacion-de-casos-de-coronavirus-en-ecuador/" target="_blank"
                         rel="nofollow">MSP.</a>
                 </span>
-                <span class="item">Estos datos son actualizados diariamente de forma manual en un período entre 1-2 horas más tarde luego del reporte oficial.</span>
+                <span class="item">Estos datos son traidos de un api construida por mi persona con los datos que ofrece
+                    la pagina web <a target="_blank" rel="noreferrer noopener"
+                        href="https://www.coronavirusecuador.com">coronavirusecuador.com</a> </span>
             </div>
         </div>
         <div class="footer">
             <span class="item">Diseñado por Stalin Maza © 2020</span>
         </div>
     </div>
-    <script type="module" src="main.js"></script>
+    <script src="./main.js"></script>
 
 </body>
 

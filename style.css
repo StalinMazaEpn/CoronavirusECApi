@@ -5,6 +5,7 @@
   --dark: #22303a;
   --red: #fa0000;
   --green: #5fb709;
+  --yellow: #ceb911;
   --ligth: #d0dae2;
   --font-sections-size: 1.3em;
   --font-content: "Open Sans", sans-serif;
@@ -15,6 +16,10 @@
 
 .d-none {
   display: none !important;
+}
+.spinner-leaflet-map{
+  top: 50%;
+  left: 50%;
 }
 
 html,
@@ -36,7 +41,7 @@ body {
   flex-direction: column;
 }
 
-.header{
+.header {
   text-align: center;
   font-size: 1.1em;
 }
@@ -63,7 +68,7 @@ body {
   justify-content: center;
   width: 100%;
   align-items: center;
-  height: 75vh;
+  height: 65vh;
   flex-direction: column;
   text-align: center;
   min-height: 200px;
@@ -181,6 +186,11 @@ body {
   position: relative;
 }
 
+.center-no-data {
+  width: 100%;
+  text-align: center;
+}
+
 .seccion-estadisticas-generales .confirmed {
   color: var(--ligth-blue);
 }
@@ -280,15 +290,18 @@ body {
   align-items: center;
 }
 
-.map-info-popup .confirmados{
+.map-info-popup .confirmados {
   color: var(--green);
   font-size: 1.3em;
 }
-.map-info-popup .fallecidos{
+.map-info-popup .fallecidos {
   color: var(--red);
   font-size: 1.3em;
 }
-.map-info-popup .provincia{
+.map-info-popup .fallecidos-probables {
+  color: var(--yellow);
+  font-size: 1.3em;
+}
+.map-info-popup .provincia {
   font-size: 1.5em;
 }
-
