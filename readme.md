@@ -5,11 +5,21 @@ Ejercicio realizado para mostrar un mapa actualizado de las personas afectadas p
 - Leaflet FullScreen
 - Leaflet Edgebuffer
 
+## Actividades
+
+**#1)** Consultar el API de "coronavirusEc".
+
+**#2)** Crear el mapa con Leaflet.
+
+**#3)** Crear los marcadores con los datos de cada provincia.
+
+**#4)** Crear los gráficos donde se muestran los datos estadísticos del Covid19.
+
+**#5)** Crear la sección con el resumen de los datos estadísticos del Covid19.
+
 ## Como Probarlo
 
 Puedes verlo [aquí](https://coronavirus-ec-sm-2019.netlify.com/) o seguir la guía sobre **Como Utilizarlo**
-
-Puedes verlo algunas estadísticas [aquí](https://coronavirus-ec-sm-2019.netlify.com/estadisticas)
 
 ## ¿Como Utilizarlo?
 
@@ -40,4 +50,4 @@ Este proyecto fue inspirando en un video genial que hizo el docente **Leonidas E
 - Puedes ver mi canal [aquí](https://www.youtube.com/channel/UCMDvFIXXZv5tUXNa7-qF5pw?view_as=subscriber)
 
 ## Nota
-Los datos los tratare de actualizar lo mas pronto posible siguiendo los datos oficiales que provee el Ministerio de Salud Publica de Ecuador que los puedes ver [aquí](https://www.salud.gob.ec/actualizacion-de-casos-de-coronavirus-en-ecuador/)
+La obtención de los datos se realiza mediante la consulta a un endpoint construido con scrapping hacia la página oficial del Ministerio de Salud Pública de Ecuador, por lo que la actualización de datos depende de la página oficial, para más información se pueda indagar [aquí](https://www.salud.gob.ec/actualizacion-de-casos-de-coronavirus-en-ecuador/)
