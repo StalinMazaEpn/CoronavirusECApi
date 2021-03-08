@@ -1,3 +1,13 @@
+"use strict";
+
+// var strict = ( function () { return !!!this } ) ()
+
+// if ( strict ) {
+//     console.log ( "strict mode enabled, strict is " + strict )
+// } else {
+//     console.log ( "strict mode not defined, strict is " + strict )
+// }
+
 let icons = {
     users: 'fa fa-users',
     user_times: 'fa fa-user-times',
